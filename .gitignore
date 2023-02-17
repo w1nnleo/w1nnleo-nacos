@@ -1,0 +1,4 @@
+# Project exclude paths
+/tia-client/target/
+/w1nnleo-client/target/
+/w1nnleo-gateway/target/

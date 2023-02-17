@@ -1,0 +1,26 @@
+[
+  {
+    "id": "w1nnleo-client",
+    "uri": "lb://w1nnleo-client",
+    "predicates": [
+      {
+        "name": "Path",
+        "args": {
+          "pattern": "/client/**"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tia-client",
+    "uri": "lb://tia-client",
+    "predicates": [
+      {
+        "name": "Path",
+        "args": {
+          "pattern": "/tiaClient/**"
+        }
+      }
+    ]
+  }
+]
