@@ -13,18 +13,18 @@ spring:
       on-profile: dev
   cloud:
     nacos:
-      username: nacos
-      password: nacos
+      username: ${NACOS_USERNAME:nacos}
+      password: ${NACOS_PASSWORD:nacos}
       #注册
       discovery:
         enabled: true
-        server-addr: 192.168.64.130:8848
-        namespace: 592f00ee-5074-4368-89bf-3ba87d8ba726
+        server-addr: ${NACOS_SERVER_ADDR:192.168.64.130:8848}
+        namespace: ${NACOS_NAMESPACE:592f00ee-5074-4368-89bf-3ba87d8ba726}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
       #配置文件
       config:
         enabled: true
-        server-addr: 192.168.64.130:8848
-        namespace: 592f00ee-5074-4368-89bf-3ba87d8ba726
+        server-addr: ${NACOS_SERVER_ADDR:192.168.64.130:8848}
+        namespace: ${NACOS_NAMESPACE:592f00ee-5074-4368-89bf-3ba87d8ba726}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
         file-extension: yml
-
-

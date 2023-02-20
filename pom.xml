@@ -28,6 +28,7 @@
         <spring-cloud.version>2021.0.5</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
         <w1nnleo.version>1.0-SNAPSHOT</w1nnleo.version>
+        <sentinel-datasource.version>1.8.0</sentinel-datasource.version>
     </properties>
 
     <dependencyManagement>
@@ -55,6 +56,12 @@
                 <version>${w1nnleo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-nacos -->
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-datasource-nacos</artifactId>
+                <version>${sentinel-datasource.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
