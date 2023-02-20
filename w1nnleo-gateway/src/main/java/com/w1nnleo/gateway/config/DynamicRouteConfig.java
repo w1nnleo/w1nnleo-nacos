@@ -71,6 +71,7 @@ public class DynamicRouteConfig implements ApplicationEventPublisherAware {
     @PostConstruct
     public void dynamicRouteByNacosListener() {
         try {
+            //获取配置，如果有空间指定，需要传递空间参数否则获取不了config信息
             ConfigService configService;
             if (Objects.nonNull(namespace)) {
                 Properties properties = new Properties();
