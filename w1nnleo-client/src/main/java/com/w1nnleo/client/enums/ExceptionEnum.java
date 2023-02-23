@@ -12,8 +12,6 @@ import lombok.Getter;
 @AllArgsConstructor
 public class ExceptionEnum {
 
-
-
     private Integer code;
 
     private String msg;

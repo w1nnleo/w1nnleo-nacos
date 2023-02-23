@@ -29,6 +29,7 @@
         <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
         <w1nnleo.version>1.0-SNAPSHOT</w1nnleo.version>
         <sentinel-datasource.version>1.8.0</sentinel-datasource.version>
+        <sleuth.version>2.2.6.RELEASE</sleuth.version>
     </properties>
 
     <dependencyManagement>
@@ -46,6 +47,14 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-sleuth-dependencies</artifactId>
+                <version>${sleuth.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
