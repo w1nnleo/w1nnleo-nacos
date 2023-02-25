@@ -28,11 +28,3 @@ spring:
         namespace: ${NACOS_NAMESPACE:592f00ee-5074-4368-89bf-3ba87d8ba726}
         group: ${NACOS_GROUP:DEFAULT_GROUP}
         file-extension: yml
-  zipkin:
-    base-url: http://192.168.64.130:9411/
-    locator:
-      discovery:
-        enabled: true
-  sleuth:
-    sampler:
-      probability: 1.0

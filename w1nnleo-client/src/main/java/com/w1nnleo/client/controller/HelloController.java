@@ -8,12 +8,14 @@ import com.w1nnleo.base.entity.R;
 import com.w1nnleo.base.enums.CommonEnum;
 import com.w1nnleo.client.feign.service.HelloService;
 import com.w1nnleo.exception.entity.BusinessException;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @Author: w1nnleo
  * @date: 2023/2/13
  * @Description:
  */
+@Slf4j
 @RestController
 @RequestMapping("/")
 public class HelloController {
@@ -28,6 +30,7 @@ public class HelloController {
 
     @GetMapping("hi")
     public R<?> hi() {
+        log.info("w1nnleo client hi");
         return helloService.hi();
     }
 
